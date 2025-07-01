@@ -6,6 +6,7 @@ import org.apache.camel.ProducerTemplate;
 import org.me.practise.personaggregator.entity.AggregationRequest;
 import org.me.practise.personaggregator.entity.PersonAggregatedResponse;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,6 +37,14 @@ public class AggregateController {
         log.info("Requesting aggregation with object: {}", request);
         PersonAggregatedResponse responseBody = producerTemplate.requestBody ( "direct:aggregateWithObject", request, PersonAggregatedResponse.class );
         log.info ( "Response from aggregation with object: {}", responseBody );
+        return responseBody;
+    }
+
+    @PostMapping
+    public PersonAggregatedResponse createPersonAggregation(AggregationRequest request) {
+        log.info("Creating person aggregation with request: {}", request);
+        PersonAggregatedResponse responseBody = producerTemplate.requestBody("direct:person-aggregate", request, PersonAggregatedResponse.class);
+        log.info("Response from person aggregation: {}", responseBody);
         return responseBody;
     }
 }

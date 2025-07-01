@@ -5,7 +5,9 @@ import org.apache.camel.LoggingLevel;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
+import org.me.practise.personaggregator.entity.Address;
 import org.me.practise.personaggregator.entity.AggregationRequest;
+import org.me.practise.personaggregator.entity.Person;
 import org.me.practise.personaggregator.utils.FallbackResponse;
 import org.me.practise.personaggregator.utils.RetryProperties;
 import org.me.practise.personaggregator.utils.ServiceResolver;
@@ -27,7 +29,7 @@ public class AggregateRoute extends RouteBuilder {
     @Override
     public void configure() {
 
-        /*onException ( ConnectException.class, SocketTimeoutException.class )
+        onException ( ConnectException.class, SocketTimeoutException.class )
                 .maximumRedeliveries ( retryProperties.getMaxAttempts () )
                 .redeliveryDelay ( retryProperties.getInitialInterval () )
                 .maximumRedeliveryDelay ( retryProperties.getMaxInterval () )
@@ -42,7 +44,7 @@ public class AggregateRoute extends RouteBuilder {
                     String responseBody = String.format ( "{ \"error\": \"%s\", \"serviceName\": \"%s\" }", errorMessage.replace ( "\"", "," ), serviceName );
                     exchange.getIn ().setBody ( responseBody );
                     exchange.getIn ().setHeader ( Exchange.HTTP_RESPONSE_CODE, 200 );
-                } );*/
+                } );
 
         from("direct:aggregateWithObject")
                 .routeId("aggregateWithObject")
@@ -129,6 +131,61 @@ public class AggregateRoute extends RouteBuilder {
                 .log ( "❌ Exception caught in address-service: ${exception.message}" )
                 .process ( fallbackProcessor() )
                 .end();
+
+
+        from ("direct:person-aggregate")
+                .routeId ("person-aggregate")
+                .log ("Received person aggregate request: ${body}")
+                .recipientList(simple("direct:person-service-param,direct:address-service-param"))
+                .parallelProcessing()
+                .aggregationStrategy(new PostOperationAggregationStrategy())
+                .parallelProcessing ()
+                .stopOnException()
+                .end()
+                .log("Processed PersonAggregatedResponse: ${body}")
+                .end ();
+
+        from("direct:person-service-param")
+                .doTry ()
+                    .routeId("person-service-param")
+                    .log("➡️ Reached person-service-param route")
+                    .log ("Received person-service-param request: ${body}")
+                    .setHeader ("serviceName", simple ("person-service-param"))
+                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+                    .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
+                    .marshal ().json(JsonLibrary.Jackson)
+                    .toD(retryProperties.getPersonService().getUrl() + "?bridgeEndpoint=true&throwExceptionOnFailure=true")
+                    .unmarshal().json(JsonLibrary.Jackson, Person.class)
+                    .log("✅ person-service-param response: ${body}")
+                    //.end();
+                .doCatch (Exception.class)
+                .log("❌ Exception caught in person-service-param: ${exception.message}")
+                //.process(fallbackProcessor())
+                .setBody (constant (null))
+                .setHeader ("serviceName", simple ("person-service-param"))
+                .setHeader ("serviceError", simple ("${exception.message}"))
+                .end();
+
+        from("direct:address-service-param")
+                .doTry ()
+                    .routeId(" address-service-param")
+                    .log("➡️ Reached address-service-param route")
+                    .log ("Received address-service-param request: ${body}")
+                    .setHeader ("serviceName", simple ("address-service-param"))
+                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+                    .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
+                    .marshal ().json(JsonLibrary.Jackson)
+                    .toD(retryProperties.getAddressService().getUrl() + "?bridgeEndpoint=true&throwExceptionOnFailure=true")
+                    .unmarshal().json(JsonLibrary.Jackson, Address.class)
+                    .log("✅ address-service-param response: ${body}")
+                    //.end();
+                .doCatch (Exception.class)
+                .log("❌ Exception caught in address-service-param: ${exception.message}")
+                .setHeader ("serviceName", simple ("address-service-param"))
+                .setHeader ("serviceError", simple ("${exception.message}"))
+                .setBody (constant (null))
+                //.process(fallbackProcessor())
+                .end ();
 
     }
 

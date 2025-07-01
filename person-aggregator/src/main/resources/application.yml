@@ -37,7 +37,7 @@ resilience4j:
         wait-duration-in-open-state: 10000
         minimum-number-of-calls: 5
 
-logging:
-    level:
-        org.apache.camel: DEBUG
-        org.apache.camel.processor.aggregate: TRACE
+#logging:
+#    level:
+#        org.apache.camel: DEBUG
+#        org.apache.camel.processor.aggregate: TRACE

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestHistoryConfig">
+    <option name="historyList">
+      <list>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:null,&quot;address&quot;:null,&quot;personServiceError&quot;:&quot;Connect to http://localhost:8081 failed: Connection refused: getsockopt&quot;,&quot;addressServiceError&quot;:&quot;Connect to http://localhost:8082 failed: Connection refused: getsockopt&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:null,&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:&quot;Connect to http://localhost:8082 failed: Connection refused: getsockopt&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:null,&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T11:30:39.322+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;123 Main St&quot;,&quot;city&quot;:&quot;Springfield&quot;,&quot;state&quot;:&quot;IL&quot;,&quot;zipCode&quot;:&quot;62701&quot;},&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T10:48:18.507+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T10:47:26.387+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T10:46:41.970+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T10:36:37.225+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:null,&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;123 Main St&quot;,&quot;city&quot;:&quot;Springfield&quot;,&quot;state&quot;:&quot;IL&quot;,&quot;zipCode&quot;:&quot;62701&quot;},&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:null,&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T09:21:53.330+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T08:59:44.711+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T08:18:29.285+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T08:10:04.632+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T08:08:21.454+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T08:05:32.646+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T07:43:03.758+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T07:38:50.770+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T07:31:11.599+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T07:21:58.335+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;123 Main St&quot;,&quot;city&quot;:&quot;Springfield&quot;,&quot;state&quot;:&quot;IL&quot;,&quot;zipCode&quot;:&quot;62701&quot;},&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2025-07-01T07:18:04.219+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/aggregate&quot;}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="person-aggregator" />
+          <option name="method" value="createPersonAggregation" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+              <option name="method" value="createPersonAggregation" />
+              <option name="methodDescription" value="createPersonAggregation" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/aggregate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+              <option name="url" value="/api/aggregate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;serviceNames[0]&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;serviceNames_e9glo&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;correlationId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;correlationId_yzou5&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;userId&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;userId_w3i6z&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="serviceNames[0]=serviceNames_e9glo&#10;&amp;correlationId=correlationId_yzou5&#10;&amp;userId=userId_w3i6z" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8083/api/aggregate&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.5&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;person&quot;:{&quot;personId&quot;:5,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;email&quot;:&quot;Charlie@Davis.com&quot;,&quot;phoneNumber&quot;:&quot;333-333-3333&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;123 Main St&quot;,&quot;city&quot;:&quot;Springfield&quot;,&quot;state&quot;:&quot;IL&quot;,&quot;zipCode&quot;:&quot;62701&quot;},&quot;personServiceError&quot;:null,&quot;addressServiceError&quot;:null}" />
+          <option name="url" value="/api/aggregate" />
+        </ResponseHistory>
+      </list>
+    </option>
+  </component>
+</project>

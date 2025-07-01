@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="className" value="org.me.practise.personaggregator.controller.AggregateController" />
+    <option name="filePath" value="" />
+    <option name="method" value="createPersonAggregation" />
+    <option name="methodType" value="POST" />
+    <option name="module" value="person-aggregator" />
+    <option name="originUrl" value="/api/aggregate" />
+    <option name="requestParamMap">
+      <map>
+        <entry key="request">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="responseParamMap">
+      <map>
+        <entry key="return">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+    <option name="url" value="/api/aggregate" />
+  </component>
+</project>
