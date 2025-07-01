@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "camel.component.http.http-client.connection-timeout",
+      "type": "java.lang.String",
+      "description": "Description for camel.component.http.http-client.connection-timeout."
+    }
+  ]
+}

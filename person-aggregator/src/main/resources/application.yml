@@ -1,0 +1,43 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: person-aggregator
+
+camel:
+  component:
+    http:
+      connect-timeout: 5000
+
+custom:
+  retry:
+    max-attempts: 3
+    initial-interval: 1000
+    max-interval: 5000
+    multiplier: 2.0
+    person-service:
+      url: http://localhost:8081/api/persons
+    address-service:
+      url: http://localhost:8082/api/address
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      personServiceCircuitBreaker:
+        sliding-window-size: 10
+        permitted-number-of-calls-in-half-open-state: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10000
+        minimum-number-of-calls: 5
+      addressServiceCircuitBreaker:
+        sliding-window-size: 10
+        permitted-number-of-calls-in-half-open-state: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10000
+        minimum-number-of-calls: 5
+
+logging:
+    level:
+        org.apache.camel: DEBUG
+        org.apache.camel.processor.aggregate: TRACE
