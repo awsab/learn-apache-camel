@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/address-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/person-aggregator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/person-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/soap-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/soap-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testing-camel/src/main/java" charset="UTF-8" />
   </component>
 </project>

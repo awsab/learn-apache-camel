@@ -4,6 +4,7 @@ import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.component.cxf.common.message.CxfConstants;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.me.practise.personaggregator.entity.Address;
 import org.me.practise.personaggregator.entity.AggregationRequest;
@@ -186,6 +187,23 @@ public class AggregateRoute extends RouteBuilder {
                 .setBody (constant (null))
                 //.process(fallbackProcessor())
                 .end ();
+
+        from("direct:soap-service-param")
+                .routeId("soap-service-param")
+                .log("➡️ Reached soap-service-param route")
+                .log("Received soap-service-param request: ${body}")
+                .setHeader (CxfConstants.OPERATION_NAME, constant("greet"))
+                .setBody (constant (new Object[] { "John Doe" })) // Example parameter for SOAP service
+                //.to ("cxf://http://localhost:8080/services/greeting" + "?serviceClass=com.me.learning.consul.soapservice.GreetingService")
+                .to("cxf:bean:greetingClient")
+                .log("✅ SOAP service response: ${body}");
+
+        from ("timer:aggregate?period=6000")
+                .routeId("timer-aggregate")
+                .log("Timer triggered for aggregation")
+                .setHeader (CxfConstants.OPERATION_NAME, constant("greet"))
+                .to("cxf:bean:greetingClient")
+                .log("✅ SOAP service response: ${body}");
 
     }
 

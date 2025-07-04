@@ -37,6 +37,11 @@ resilience4j:
         wait-duration-in-open-state: 10000
         minimum-number-of-calls: 5
 
+soap:
+  greeting:
+    wsdl: http://localhost:8080/services/greeting?wsdl
+    serviceClass: com.me.learning.consul.soapservice.GreetingService
+
 #logging:
 #    level:
 #        org.apache.camel: DEBUG

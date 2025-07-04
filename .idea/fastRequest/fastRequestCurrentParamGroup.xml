@@ -25,7 +25,7 @@
         </entry>
       </map>
     </option>
-    <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;}" />
+    <option name="returnDocument" value="{&quot;person&quot;:{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;,&quot;email&quot;:&quot;No comment,Type =String&quot;,&quot;phoneNumber&quot;:&quot;No comment,Type =String&quot;},&quot;address&quot;:{&quot;address&quot;:&quot;No comment,Type =String&quot;,&quot;city&quot;:&quot;No comment,Type =String&quot;,&quot;state&quot;:&quot;No comment,Type =String&quot;,&quot;zipCode&quot;:&quot;No comment,Type =String&quot;},&quot;soapAccount&quot;:{&quot;username&quot;:&quot;No comment,Type =String&quot;},&quot;personServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;addressServiceError&quot;:&quot;No comment,Type =String&quot;,&quot;soapServiceError&quot;:&quot;No comment,Type =String&quot;}" />
     <option name="url" value="/api/aggregate" />
   </component>
 </project>
