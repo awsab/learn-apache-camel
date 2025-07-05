@@ -6,9 +6,6 @@ import org.apache.camel.builder.RouteBuilder;
 import org.me.practise.personaggregator.utils.RetryProperties;
 import org.springframework.stereotype.Component;
 
-import java.net.ConnectException;
-import java.net.SocketTimeoutException;
-
 @Component
 public class GlobalExceptionHandlerRoute extends RouteBuilder {
     private final RetryProperties retryProperties;

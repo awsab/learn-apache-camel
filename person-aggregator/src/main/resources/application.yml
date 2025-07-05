@@ -9,6 +9,15 @@ camel:
   component:
     http:
       connect-timeout: 5000
+  context:
+    tracing: false
+    debugging: false
+    message-history: true
+    shutdown-timeout: 25
+  springboot:
+    use-mdc-logging: true
+    main-run-controller: true
+
 
 custom:
   retry:
@@ -41,6 +50,16 @@ soap:
   greeting:
     wsdl: http://localhost:8080/services/greeting?wsdl
     serviceClass: com.me.learning.consul.soapservice.GreetingService
+
+
+
+logging:
+  level:
+    org.apache.camel: INFO
+    org.me.practise.personaggregator: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] [trace:%X{traceId}] [span:%X{spanId}] [correlation:%X{correlationId}] [route:%X{routeId}] %-5level %logger{36} - %msg%n"
+
 
 #logging:
 #    level:

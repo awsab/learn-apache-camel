@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/aggregate")
@@ -32,7 +35,7 @@ public class AggregateController {
         AggregationRequest request = new AggregationRequest();
         request.setCorrelationId("12345");
         request.setUserId("user-123");
-        request.setServiceNames( List.of("direct:person-service", "direct:address-service"));
+        request.setServiceNames(List.of("person-service", "address-service", "soap-service"));
 
         log.info("Requesting aggregation with object: {}", request);
         PersonAggregatedResponse responseBody = producerTemplate.requestBody ( "direct:aggregateWithObject", request, PersonAggregatedResponse.class );
@@ -43,7 +46,10 @@ public class AggregateController {
     @PostMapping
     public PersonAggregatedResponse createPersonAggregation(AggregationRequest request) {
         log.info("Creating person aggregation with request: {}", request);
-        PersonAggregatedResponse responseBody = producerTemplate.requestBody("direct:person-aggregate", request, PersonAggregatedResponse.class);
+        Map<String, Object> headers = new HashMap<> ();
+        headers.put("correlationId", UUID.randomUUID().toString());
+
+        PersonAggregatedResponse responseBody = producerTemplate.requestBodyAndHeaders ("direct:person-aggregate", request, headers, PersonAggregatedResponse.class);
         log.info("Response from person aggregation: {}", responseBody);
         return responseBody;
     }

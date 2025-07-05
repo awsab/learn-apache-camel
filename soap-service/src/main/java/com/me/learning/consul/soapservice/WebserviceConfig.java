@@ -10,6 +10,7 @@ package com.me.learning.consul.soapservice;
 
 import jakarta.xml.ws.Endpoint;
 import org.apache.cxf.Bus;
+import org.apache.cxf.jaxws.EndpointImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,7 +19,7 @@ public class WebserviceConfig {
 
     @Bean
     public Endpoint endpoint(Bus bus, GreetingServiceImpl greetingService) {
-        Endpoint endpoint = Endpoint.create(greetingService);
+        Endpoint endpoint = new EndpointImpl (bus, greetingService);
         endpoint.publish("/greeting");
         // Optionally, you can set the address for the endpoint
         // endpoint.setAddress("/greeting");

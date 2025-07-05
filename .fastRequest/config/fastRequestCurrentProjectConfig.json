@@ -13,6 +13,15 @@
 				}
 			],
 			"name":"person-aggregator"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8084"
+				}
+			],
+			"name":"soap-service"
 		}
 	],
 	"envList":[
@@ -25,7 +34,8 @@
 	"postScript":"",
 	"preScript":"",
 	"projectList":[
-		"person-aggregator"
+		"person-aggregator",
+		"soap-service"
 	],
 	"syncModel":{
 		"branch":"master",

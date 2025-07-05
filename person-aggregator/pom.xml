@@ -28,6 +28,9 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <generated.sources.dir>${project.build.directory}/generated-sources/wsimport</generated.sources.dir>
+        <generated.classes.dir>${project.build.directory}/generated-classes</generated.classes.dir>
+        <wsimport.generated.jar>${project.build.directory}/greeting-ws-client.jar</wsimport.generated.jar>
     </properties>
     <dependencies>
         <dependency>
@@ -74,20 +77,78 @@
             <artifactId>resilience4j-spring-boot3</artifactId>
             <version>2.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>4.0.4</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing</artifactId>
+        </dependency>
+
+        <!-- Micrometer Tracing Bridge for Brave -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing-bridge-brave</artifactId>
+        </dependency>
+
+        <!-- Zipkin Reporter -->
+        <dependency>
+            <groupId>io.zipkin.reporter2</groupId>
+            <artifactId>zipkin-reporter-brave</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.zipkin.reporter2</groupId>
+            <artifactId>zipkin-sender-urlconnection</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>compile-generated-source</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${generated.classes.dir}</outputDirectory>
+                            <source>${generated.sources.dir}</source>
+                        </configuration>
+                    </execution>
+                </executions>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </path>
-                    </annotationProcessorPaths>
+                    </annotationProcessorPaths><source>21</source><target>21</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -101,6 +162,80 @@
                         </exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.sun.xml.ws</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>4.0.2</version>
+                <executions>
+                    <execution>
+                        <id>wsimport-greeting</id>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+                            <!-- Path to WSDL file -->
+                            <wsdlFiles>
+                                <wsdlFile>GreetingService.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <!-- Java package for generated classes -->
+                            <packageName>com.me.learning.consul.soapservice</packageName>
+                            <!-- Output directory for generated source files -->
+                            <sourceDestDir>${project.build.directory}/generated-sources/wsimport</sourceDestDir>
+                            <!-- Keep source files for debugging -->
+                            <keep>true</keep>
+                            <!-- Add generated source to Maven compile path -->
+                            <verbose>true</verbose>
+                            <extension>true</extension>
+                            <!-- Enable Jakarta namespace -->
+                            <!--<args>
+                                <arg>-encoding</arg>
+                                <arg>UTF-8</arg>
+                                <arg>-enableJaxbBindings</arg>
+                            </args>-->
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>package-ws-client</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    <configuration>
+                        <classesDirectory>${generated.classes.dir}</classesDirectory>
+                        <outputDirectory>${project.build.directory}</outputDirectory>
+                        <finalName>greeting-ws-client</finalName>
+                    </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.4.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources/wsimport</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

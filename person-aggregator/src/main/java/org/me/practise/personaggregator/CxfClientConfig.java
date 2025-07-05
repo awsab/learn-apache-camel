@@ -23,7 +23,7 @@ public class CxfClientConfig {
         cxfEndpoint.setBus(bus);
         cxfEndpoint.setAddress("http://localhost:8080/soap-service/greeting");
         try {
-            cxfEndpoint.setServiceClass("com.me.learning.consul.soapservice.GreetingServiceImpl");
+            cxfEndpoint.setServiceClass("com.me.learning.consul.soapservice.GreetingService");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException (e);
         }

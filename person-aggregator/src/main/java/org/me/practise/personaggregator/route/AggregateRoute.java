@@ -1,5 +1,6 @@
 package org.me.practise.personaggregator.route;
 
+import com.me.learning.consul.soapservice.SoapServiceRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.Processor;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Component;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 import java.util.Map;
+
 
 @Component
 public class AggregateRoute extends RouteBuilder {
@@ -137,9 +139,11 @@ public class AggregateRoute extends RouteBuilder {
         from ("direct:person-aggregate")
                 .routeId ("person-aggregate")
                 .log ("Received person aggregate request: ${body}")
-                .recipientList(simple("direct:person-service-param,direct:address-service-param"))
+                .log ("Correlation ID: ${header.correlationId}")
+                .recipientList(simple("direct:person-service-param,direct:address-service-param, direct:soap-service-param"))
                 .parallelProcessing()
                 .aggregationStrategy(new PostOperationAggregationStrategy())
+                //.aggregationStrategy(new RefactoredAggregationStrategy())
                 .parallelProcessing ()
                 .stopOnException()
                 .end()
@@ -147,10 +151,11 @@ public class AggregateRoute extends RouteBuilder {
                 .end ();
 
         from("direct:person-service-param")
+                .routeId("person-service-param")
+                .log("➡️ Reached person-service-param route")
+                .log ("Received person-service-param request: ${body}")
+                .log("Correlation ID: ${header.correlationId}")
                 .doTry ()
-                    .routeId("person-service-param")
-                    .log("➡️ Reached person-service-param route")
-                    .log ("Received person-service-param request: ${body}")
                     .setHeader ("serviceName", simple ("person-service-param"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
@@ -162,16 +167,17 @@ public class AggregateRoute extends RouteBuilder {
                 .doCatch (Exception.class)
                 .log("❌ Exception caught in person-service-param: ${exception.message}")
                 //.process(fallbackProcessor())
-                .setBody (constant (null))
+                .setBody (constant ( (Object) null ))
                 .setHeader ("serviceName", simple ("person-service-param"))
                 .setHeader ("serviceError", simple ("${exception.message}"))
                 .end();
 
         from("direct:address-service-param")
+                .routeId(" address-service-param")
+                .log("➡️ Reached address-service-param route")
+                .log ("Received address-service-param request: ${body}")
+                .log("Correlation ID: ${header.correlationId}")
                 .doTry ()
-                    .routeId(" address-service-param")
-                    .log("➡️ Reached address-service-param route")
-                    .log ("Received address-service-param request: ${body}")
                     .setHeader ("serviceName", simple ("address-service-param"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
@@ -184,7 +190,7 @@ public class AggregateRoute extends RouteBuilder {
                 .log("❌ Exception caught in address-service-param: ${exception.message}")
                 .setHeader ("serviceName", simple ("address-service-param"))
                 .setHeader ("serviceError", simple ("${exception.message}"))
-                .setBody (constant (null))
+                .setBody (constant ( (Object) null ))
                 //.process(fallbackProcessor())
                 .end ();
 
@@ -192,18 +198,34 @@ public class AggregateRoute extends RouteBuilder {
                 .routeId("soap-service-param")
                 .log("➡️ Reached soap-service-param route")
                 .log("Received soap-service-param request: ${body}")
-                .setHeader (CxfConstants.OPERATION_NAME, constant("greet"))
-                .setBody (constant (new Object[] { "John Doe" })) // Example parameter for SOAP service
-                //.to ("cxf://http://localhost:8080/services/greeting" + "?serviceClass=com.me.learning.consul.soapservice.GreetingService")
-                .to("cxf:bean:greetingClient")
-                .log("✅ SOAP service response: ${body}");
+                .log("Correlation ID: ${header.correlationId}")
+                .doTry ()
+                    .setHeader (CxfConstants.OPERATION_NAME, constant("greet"))
+                .process (exchange -> {
+                    AggregationRequest request = exchange.getIn().getBody(AggregationRequest.class);
+                    if (request != null) {
+                        SoapServiceRequest soapServiceRequest = new SoapServiceRequest();
+                        soapServiceRequest.getServiceNames().addAll(request.getServiceNames());
+                        soapServiceRequest.setCorrelationId(request.getCorrelationId());
+                        soapServiceRequest.setUserId(request.getUserId());
+                        exchange.getIn().setBody(soapServiceRequest);
+                    }
+                })
+                    //.setBody (constant (new Object[] { "John Doe" })) // Example parameter for SOAP service
+                    .to ("cxf://http://localhost:8084/services/greeting" + "?serviceClass=com.me.learning.consul.soapservice.GreetingService")
+                    //.to("cxf:bean:greetingClient")
+                    //.unmarshal().json(JsonLibrary.Jackson, SoapAccount.class )
+                    .setHeader ("serviceName", simple ("soap-service-param"))
+                    .setHeader ("serviceError", simple ("${exception.message}"))
+                    .log("✅ SOAP service response: ${body}")
+                .doCatch ( Exception.class )
+                .log("❌ Exception caught in soap-service-param: ${exception.message}")
+                .setBody (constant ( (Object) null ))
+                .setHeader ("serviceName", simple ("soap-service-param"))
+                .setHeader ("serviceError", simple ("${exception.message}"))
+                //.process ( fallbackProcessor () )
+                .end();
 
-        from ("timer:aggregate?period=6000")
-                .routeId("timer-aggregate")
-                .log("Timer triggered for aggregation")
-                .setHeader (CxfConstants.OPERATION_NAME, constant("greet"))
-                .to("cxf:bean:greetingClient")
-                .log("✅ SOAP service response: ${body}");
 
     }
 
@@ -216,4 +238,6 @@ public class AggregateRoute extends RouteBuilder {
             exchange.getIn().setHeader(Exchange.HTTP_RESPONSE_CODE, 200);
         };
     }
+
+
 }

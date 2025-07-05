@@ -7,14 +7,13 @@
  */
 package org.me.practise.personaggregator.route;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.me.learning.consul.soapservice.SoapServiceResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.camel.Exchange;
-import org.me.practise.personaggregator.entity.Address;
-import org.me.practise.personaggregator.entity.Person;
+import org.apache.cxf.message.MessageContentsList;
 import org.me.practise.personaggregator.entity.PersonAggregatedResponse;
+import org.me.practise.personaggregator.entity.SoapAccount;
 
 @Slf4j
 public class PostOperationAggregationStrategy implements org.apache.camel.AggregationStrategy {
@@ -39,11 +38,32 @@ public class PostOperationAggregationStrategy implements org.apache.camel.Aggreg
         if ( newBody != null ) {
 
             try {
-                String className = newBody.getClass ().getSimpleName ();
-                String methodName = "set" + className;
 
-                var methodSetter = PersonAggregatedResponse.class.getMethod (methodName, newBody.getClass ());
-                methodSetter.invoke (personAggregatedResponse, newBody);
+                if(newBody instanceof MessageContentsList soapResponse) {
+                    if(!soapResponse.isEmpty ()) {
+                        Object firstElement = soapResponse.get (0);
+                        if (firstElement instanceof SoapServiceResponse soapServiceResponse) {
+                            personAggregatedResponse.setSoapAccount (
+                                    new SoapAccount (
+                                            soapServiceResponse.getServiceNames (),
+                                            soapServiceResponse.getCorrelationId (),
+                                            soapServiceResponse.getUserId ()
+                                    )
+                            );
+                        }else {
+                            log.warn ("Unexpected type in SOAP response: {}", firstElement.getClass ().getSimpleName ());
+                        }
+                    } else {
+                        log.warn ("SOAP response is empty for service: {}", serviceName);
+                    }
+
+                }else {
+                    String className = newBody.getClass ().getSimpleName ();
+                    String methodName = "set" + className;
+
+                    var methodSetter = PersonAggregatedResponse.class.getMethod (methodName, newBody.getClass ());
+                    methodSetter.invoke (personAggregatedResponse, newBody);
+                }
             } catch (Exception e) {
                 log.error ("Error processing body: {} - {}", newBody, e.getMessage ());
                 throw new RuntimeException (e);
@@ -54,6 +74,8 @@ public class PostOperationAggregationStrategy implements org.apache.camel.Aggreg
                 personAggregatedResponse.setPersonServiceError (errorMessage);
             } else if ("address-service-param".equals (serviceName)) {
                 personAggregatedResponse.setAddressServiceError (errorMessage);
+            }else if ("soap-service-param".equals (serviceName)) {
+                personAggregatedResponse.setSoapServiceError (errorMessage);
             }
         } else {
             log.warn ("Received empty body from service: {}", serviceName);

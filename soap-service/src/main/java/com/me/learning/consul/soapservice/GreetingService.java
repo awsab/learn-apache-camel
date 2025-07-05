@@ -9,6 +9,6 @@ import jakarta.jws.WebService;
 public interface GreetingService {
 
     @WebMethod
-    @WebResult (name = "greeting", targetNamespace = "http://soapservice.consul.learning.me.com/")
-    String greet(@WebParam (name = "name", targetNamespace = "http://soapservice.consul.learning.me.com/") String name);
+    @WebResult (name = "soapServiceRequest", targetNamespace = "http://soapservice.consul.learning.me.com/")
+    SoapServiceResponse greet(@WebParam (name = "soapServiceRequest", targetNamespace = "http://soapservice.consul.learning.me.com/") SoapServiceRequest soapServiceRequest);
 }
