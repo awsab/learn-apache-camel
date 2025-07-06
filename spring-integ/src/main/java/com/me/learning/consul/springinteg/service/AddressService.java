@@ -8,7 +8,7 @@
 package com.me.learning.consul.springinteg.service;
 
 import com.me.learning.consul.springinteg.entity.AddressResponse;
-import com.me.learning.consul.springinteg.gateway.AddressGateway;
+import com.me.learning.consul.springinteg.gatewayold.AddressGateway;
 import org.springframework.stereotype.Service;
 
 @Service

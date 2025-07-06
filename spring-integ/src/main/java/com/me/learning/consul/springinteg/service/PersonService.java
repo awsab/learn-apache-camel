@@ -7,9 +7,8 @@
  */
 package com.me.learning.consul.springinteg.service;
 
-import com.me.learning.consul.springinteg.entity.PersonRequest;
 import com.me.learning.consul.springinteg.entity.PersonResponse;
-import com.me.learning.consul.springinteg.gateway.PersonGateway;
+import com.me.learning.consul.springinteg.gatewayold.PersonGateway;
 import org.springframework.stereotype.Service;
 
 @Service

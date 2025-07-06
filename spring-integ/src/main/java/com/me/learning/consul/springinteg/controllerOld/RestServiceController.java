@@ -5,7 +5,7 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.springinteg;
+package com.me.learning.consul.springinteg.controllerOld;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

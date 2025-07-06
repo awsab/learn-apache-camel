@@ -5,7 +5,7 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.springinteg.config;
+package com.me.learning.consul.springinteg.configOld;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

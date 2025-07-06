@@ -5,7 +5,7 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.springinteg.gateway;
+package com.me.learning.consul.springinteg.gatewayold;
 
 import com.me.learning.consul.springinteg.entity.PersonResponse;
 import org.springframework.integration.annotation.MessagingGateway;

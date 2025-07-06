@@ -5,7 +5,7 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.springinteg.controller;
+package com.me.learning.consul.springinteg.controllerOld;
 
 import com.me.learning.consul.springinteg.entity.AddressResponse;
 import com.me.learning.consul.springinteg.service.AddressService;

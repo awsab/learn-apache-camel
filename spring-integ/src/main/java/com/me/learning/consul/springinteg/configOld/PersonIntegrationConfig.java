@@ -5,11 +5,10 @@
  * Usage    :
  * Since    : Version 1.0
  */
-package com.me.learning.consul.springinteg.config;
+package com.me.learning.consul.springinteg.configOld;
 
 import com.me.learning.consul.springinteg.entity.PersonResponse;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.integration.channel.DirectChannel;
@@ -19,7 +18,7 @@ import org.springframework.messaging.MessageChannel;
 
 import java.util.Map;
 
-@Configuration
+//@Configuration
 public class PersonIntegrationConfig {
 
     @Bean

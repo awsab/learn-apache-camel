@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="com.me.learning.consul.springinteg.controller.PersonServiceController" />
+    <option name="className" value="com.me.learning.consul.springinteg.controller.ServiceController" />
     <option name="filePath" value="" />
-    <option name="method" value="getPersonById" />
+    <option name="method" value="getAddressById" />
     <option name="module" value="spring-integ" />
-    <option name="originUrl" value="/person-controller/{personId}" />
+    <option name="originUrl" value="/api/service/address/{addressId}" />
     <option name="pathParamMap">
       <map>
-        <entry key="personId">
+        <entry key="addressId">
           <value>
             <Object />
           </value>
@@ -24,7 +24,7 @@
         </entry>
       </map>
     </option>
-    <option name="returnDocument" value="{&quot;personId&quot;:&quot;No comment,Type =Number&quot;,&quot;firstName&quot;:&quot;No comment,Type =String&quot;,&quot;lastName&quot;:&quot;No comment,Type =String&quot;}" />
-    <option name="url" value="/person-controller/1" />
+    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+    <option name="url" value="/api/service/address/2" />
   </component>
 </project>

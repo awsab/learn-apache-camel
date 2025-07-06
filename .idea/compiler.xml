@@ -10,28 +10,19 @@
         <module name="soap-service" />
         <module name="person-service" />
       </profile>
-      <profile name="Annotation profile for address-service-request" enabled="true">
+      <profile name="Annotation profile for spring-integ" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="spring-integ" />
         <module name="testing-camel" />
         <module name="person-aggregator" />
-        <module name="address-service-request" />
-      </profile>
-      <profile name="Annotation profile for person-service-request" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
         <module name="person-service-request" />
         <module name="address-service" />
+        <module name="address-service-request" />
       </profile>
     </annotationProcessing>
   </component>
