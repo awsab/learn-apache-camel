@@ -1,0 +1,13 @@
+server:
+  port: 8806
+
+spring:
+  application:
+    name: spring-integ
+
+rest:
+  services:
+    endpoint1: https://jsonplaceholder.typicode.com/posts/1
+    address-service: http://localhost:8090/address
+    person-service: http://localhost:8091/person
+

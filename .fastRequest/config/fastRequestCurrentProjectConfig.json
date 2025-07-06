@@ -22,6 +22,33 @@
 				}
 			],
 			"name":"soap-service"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8806"
+				}
+			],
+			"name":"spring-integ"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8090"
+				}
+			],
+			"name":"address-service-request"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8091"
+				}
+			],
+			"name":"person-service-request"
 		}
 	],
 	"envList":[
@@ -35,7 +62,10 @@
 	"preScript":"",
 	"projectList":[
 		"person-aggregator",
-		"soap-service"
+		"soap-service",
+		"spring-integ",
+		"address-service-request",
+		"person-service-request"
 	],
 	"syncModel":{
 		"branch":"master",

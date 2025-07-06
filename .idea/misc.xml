@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/address-service/pom.xml" />
         <option value="$PROJECT_DIR$/person-aggregator/pom.xml" />
         <option value="$PROJECT_DIR$/soap-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-integ/pom.xml" />
+        <option value="$PROJECT_DIR$/person-service-request/pom.xml" />
+        <option value="$PROJECT_DIR$/address-service-request/pom.xml" />
       </list>
     </option>
   </component>

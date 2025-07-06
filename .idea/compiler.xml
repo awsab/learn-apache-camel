@@ -10,34 +10,40 @@
         <module name="soap-service" />
         <module name="person-service" />
       </profile>
-      <profile name="Annotation profile for address-service" enabled="true">
+      <profile name="Annotation profile for address-service-request" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="address-service" />
-      </profile>
-      <profile name="Annotation profile for person-aggregator" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
+        <module name="spring-integ" />
         <module name="testing-camel" />
         <module name="person-aggregator" />
+        <module name="address-service-request" />
+      </profile>
+      <profile name="Annotation profile for person-service-request" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="person-service-request" />
+        <module name="address-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="address-service" options="-parameters" />
+      <module name="address-service-request" options="-parameters" />
       <module name="person-aggregator" options="-parameters" />
       <module name="person-service" options="-parameters" />
+      <module name="person-service-request" options="-parameters" />
       <module name="soap-service" options="-parameters" />
+      <module name="spring-integ" options="-parameters" />
       <module name="testing-camel" options="-parameters" />
     </option>
   </component>
