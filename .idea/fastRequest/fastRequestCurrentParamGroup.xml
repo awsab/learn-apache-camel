@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="com.me.learning.consul.springinteg.controller.ServiceController" />
+    <option name="className" value="com.me.learning.consul.springinteg.controller.ParallelController" />
     <option name="filePath" value="" />
-    <option name="method" value="getAddressById" />
+    <option name="method" value="getAddressAndPersonById" />
     <option name="module" value="spring-integ" />
-    <option name="originUrl" value="/api/service/address/{addressId}" />
+    <option name="originUrl" value="/parallel-controller/address/{addressId}/person/{personId}" />
     <option name="pathParamMap">
       <map>
         <entry key="addressId">
+          <value>
+            <Object />
+          </value>
+        </entry>
+        <entry key="personId">
           <value>
             <Object />
           </value>
@@ -24,7 +29,7 @@
         </entry>
       </map>
     </option>
-    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
-    <option name="url" value="/api/service/address/2" />
+    <option name="returnDocument" value="{&quot;result&quot;:{},&quot;stack&quot;:{&quot;next&quot;:{&quot;status&quot;:&quot;No comment,Type =Number&quot;},&quot;status&quot;:&quot;No comment,Type =Number&quot;}}" />
+    <option name="url" value="/parallel-controller/address/1/person/1" />
   </component>
 </project>

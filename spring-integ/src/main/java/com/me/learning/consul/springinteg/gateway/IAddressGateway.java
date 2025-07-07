@@ -4,6 +4,9 @@ import com.me.learning.consul.springinteg.entity.AddressRequest;
 import com.me.learning.consul.springinteg.entity.AddressResponse;
 import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.MessagingGateway;
+import org.springframework.scheduling.annotation.Async;
+
+import java.util.concurrent.CompletableFuture;
 
 @MessagingGateway(
         name = "addressGateway1",
@@ -17,4 +20,6 @@ public interface IAddressGateway extends BaseServiceGateway<AddressResponse, Lon
     @Gateway(replyTimeout = 5000)
     AddressResponse getAddressByEmail(String emailId);
 
+    @Async
+    public CompletableFuture<AddressResponse> getAddressByIdAsync(Long addressId);
 }

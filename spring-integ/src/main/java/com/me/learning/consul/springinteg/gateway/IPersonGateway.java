@@ -4,6 +4,9 @@ import com.me.learning.consul.springinteg.entity.PersonRequest;
 import com.me.learning.consul.springinteg.entity.PersonResponse;
 import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.MessagingGateway;
+import org.springframework.scheduling.annotation.Async;
+
+import java.util.concurrent.CompletableFuture;
 
 @MessagingGateway(
         name = "personGateway1",
@@ -16,4 +19,7 @@ public interface IPersonGateway extends BaseServiceGateway<PersonResponse, Long,
 
     @Gateway(replyTimeout = 5000)
     PersonResponse createPerson(PersonRequest personRequest);
+
+    @Async
+    CompletableFuture<PersonResponse> getPersonByIdAsync(Long personId);
 }
